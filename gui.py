@@ -1,6 +1,6 @@
-from tkinter import *
 from tkinter.tix import *
 import pyperclip
+
 
 class Gui:
 
@@ -18,13 +18,12 @@ class Gui:
 
         Label(frame, text='TRANSLATED TEXT', font=('Microsoft Sans Serif', 15, 'bold'), pady=15, padx=4, bg='#EFEFEF', fg='#2C82C9').grid(row=2, column=0)
 
-        Button(frame, command=self.copy, text="COPY TO CLIPBOARD", font=('Microsoft Sans Serif', 12), bg='#2C82C9', fg='#181303').grid(row=4, column=0, pady=15)
+        Button(frame, command=self.copy, text="COPY TO CLIPBOARD", font=('Microsoft Sans Serif', 12), bg='#2C82C9', fg='#EFEFEF').grid(row=4, column=0, pady=15)
 
         translatedTextField = ScrolledWindow(frame, width=500, height=200)
         translatedTextField.grid(row=3, column=0)
         win2 = translatedTextField.window
         Label(win2, text=translation, font=('Microsoft Sans Serif', 12), pady=20, padx=30, bg='#EFEFEF', justify=LEFT, wraplength=400, fg='#181303').pack()
-
 
 
     def copy(self):
