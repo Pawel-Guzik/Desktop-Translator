@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter.tix import *
 import pyperclip
 
-
 class Gui:
 
     def __init__(self, toTranslate, translation):
@@ -42,6 +41,3 @@ class Gui:
         positionDown = int(root.winfo_screenheight() / 2 - 600 / 2)
         root.geometry("500x600+{}+{}".format(positionRight, positionDown))
         return root
-
-
-
